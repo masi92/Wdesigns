@@ -94,6 +94,10 @@ body {
  * cards
  */
 
+ .container-fluid {
+   height: 40%;
+ }
+
 .bg-custom {
   background-color: rgb(173, 171, 4) !important;
 }
