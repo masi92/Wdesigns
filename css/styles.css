@@ -35,6 +35,11 @@ body {
  */
 
  header {
+  background-image: url(https://images.unsplash.com/photo-1485038502006-ab645cd41217?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   height: 60%;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -94,30 +99,39 @@ body {
  * cards
  */
 
+
+img {
+  max-width: 100%;
+  min-height: 140px;
+  vertical-align: middle;
+  
+}
+
  .container-fluid {
    height: 40%;
  }
 
 .bg-custom {
-  background-color: rgb(173, 171, 4) !important;
+  background-color: #333 !important;
 }
 
 .bg-custom-2 {
   background-color: rgb(207, 204, 204) !important;
 }
 
-.card {
-  border: none;
-}
-
 .row-height {
-  height: 259px;
+   min-height: 20% !important;
 }
 
-.card-img-overlay {
-  position: relative !important;
+.card-img {
+  
 }
 
+.card-size {
+  min-height: 100%;
+  overflow: hidden;
+  
+}
 
 .card-title {
   position: absolute;
@@ -132,3 +146,20 @@ body {
   font-size: 0.8em;
 }
 
+/*
+.info {
+  margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .row-height {
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+*/
+
+}
