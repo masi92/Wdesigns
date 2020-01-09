@@ -107,9 +107,11 @@ img {
   
 }
 
- .container-fluid {
+.container-fluid {
    height: 40%;
- }
+}
+
+
 
 .bg-custom {
   background-color: #333 !important;
@@ -123,9 +125,11 @@ img {
    min-height: 20% !important;
 }
 
-.card-img {
-  
+/*
+.card-img-overlay {
+  position: absolute !important;
 }
+*/
 
 .card-size {
   min-height: 100%;
