@@ -121,8 +121,8 @@ img {
   background-color: rgb(207, 204, 204) !important;
 }
 
-.row-height {
-   min-height: 20% !important;
+.row {
+   height: 100% !important;
 }
 
 /*
@@ -135,6 +135,12 @@ img {
   min-height: 100%;
   overflow: hidden;
   
+}
+
+.card:hover {  
+  background-size: 140% !important;
+  transition-duration: .4s, .4s;
+  transition-timing-function: ease, ease-out;
 }
 
 .card-title {
@@ -157,13 +163,6 @@ img {
 
 
 @media (max-width: 768px) {
-  .row-height {
-    height: 100%;
-  }
-  img {
-    max-width: 100%;
-    vertical-align: middle;
-  }
-*/
+
 
 }
