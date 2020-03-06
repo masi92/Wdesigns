@@ -13,7 +13,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
@@ -27,19 +27,37 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #303841;
 }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px !important;
+  padding: 0 25px 25px 25px;
+}
+h4 {
+  font-size: 20px !important;
+  color: white;
+  padding: 0 25px 25px 25px;
+}
+
+.row {
+  height: 100% !important;
+}
+
 
 /*
  * Header
  */
 
  header {
+  /*
   background-image: url(https://images.unsplash.com/photo-1485038502006-ab645cd41217?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  */
   height: 60%;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -86,6 +104,7 @@ body {
 /*
  * Cover
  */
+
 .cover {
   padding: 0 1.5rem;
 }
@@ -95,46 +114,69 @@ body {
 }
 
 
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center !important;
+  flex-wrap: wrap;
+  color: #303841;
+}
+
+.welcome__single {
+  align-items: flex-start;
+  margin: 50px 0px 150px 0px;
+}
+
+.socials {
+  position: absolute;
+  bottom: 43%;
+}
+
+.social {
+  display: inline-block;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #303841;
+  border-radius: 50%;
+  transition: .5s;
+  background-color: #fff;
+}
+
+.social:hover {
+  color: #f7c873;
+  transition: .5s;
+}
+
+
+
 /*
  * cards
  */
-
 
 img {
   max-width: 100%;
   min-height: 140px;
   vertical-align: middle;
-  
 }
 
 .container-fluid {
    height: 40%;
 }
 
-
-
 .bg-custom {
-  background-color: #333 !important;
+  background-color: #303841 !important;
 }
 
 .bg-custom-2 {
-  background-color: rgb(207, 204, 204) !important;
+  background-color: #f3f3f3 !important;
 }
 
-.row {
-   height: 100% !important;
-}
-
-/*
-.card-img-overlay {
-  position: absolute !important;
-}
-*/
 
 .card-size {
   min-height: 100%;
   overflow: hidden;
-  
 }
 
 .card:hover {  
@@ -145,24 +187,25 @@ img {
 
 .card-title {
   position: absolute;
+  color: #303841;
   bottom: 5%;
   padding: 5%;
 }
 
 .card-text {
   position: absolute;
+  color: #303841;
   bottom: 0%;
   padding: 5%;
   font-size: 0.8em;
 }
 
+
+
 /*
-.info {
-  margin-top: 30px;
-}
-
-
 @media (max-width: 768px) {
 
-
 }
+*/
+
+
