@@ -32,14 +32,32 @@ body {
 
 h1 {
   text-align: center;
-  color: white;
+  color: #f3f3f3;
   font-size: 30px !important;
-  padding: 0 25px 25px 25px;
+  margin: 25px 25px 25px 25px;
 }
+
+h2 {
+  font-size: 20px !important;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  margin: 20px 0 20px 0;
+}
+
 h4 {
   font-size: 20px !important;
-  color: white;
-  padding: 0 25px 25px 25px;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  margin: 10px 0 10px 0;
+}
+
+h5 {
+  font-size: 18px !important;
+  color: #f3f3f3;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+
+}
+
+p {
+  font-size: 15px !important;
 }
 
 .row {
@@ -83,18 +101,19 @@ h4 {
 }
 
 .welcome__single {
-  margin: 50px 0px 150px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .welcome__single__img {
   display: flex;
   justify-content: center;
-  margin: 50px 0px 150px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
-.socials {
+.socials, .services {
   display: flex;
   justify-content: center;
+  margin: 40px;
 }
 
 .social {
@@ -105,12 +124,29 @@ h4 {
   color: #303841;
   border-radius: 50%;
   transition: .5s;
-  background-color: #fff;
+  background-color: #f3f3f3;
   margin-left: 0.5em !important;
-
 }
 
-.social:hover {
+.service {
+  display: inline-block;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #f3f3f3;
+  border-radius: 50%;
+  transition: .5s;
+  background-color: #303841;
+  margin-left: 0.5em !important;
+}
+
+.icon__container {
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.social:hover, .service:hover {
   color: #f7c873;
   transition: .5s;
 }
@@ -155,19 +191,23 @@ img {
 
 .card-title {
   position: absolute;
-  color: #303841;
   bottom: 5%;
   padding: 5%;
 }
 
 .card-text {
   position: absolute;
-  color: #303841;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   bottom: 0%;
   padding: 5%;
   font-size: 0.8em;
 }
 
+.info-card {
+  padding-top: 20px;
+  text-align: center;
+}
 
 
 /*
