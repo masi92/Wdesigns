@@ -1,7 +1,7 @@
 /*
  * Globals
  */
-
+ @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 /* Links */
 a,
 a:focus,
@@ -91,11 +91,23 @@ p {
 
 .welcome__single {
   margin: 50px 0px 50px 0px;
+  text-align: center;
+  align-self: center;
+}
+
+.welcome__single--1 {
+  padding: 0 8% 0 3%;
+}
+
+.welcome__single--2{
+  padding: 0 3% 0 8%;
 }
 
 .welcome__single__img {
   display: flex;
-  justify-content: center;
+  align-self: center;
+  width: 15%;
+  position: absolute;
 }
 
 .socials, .services {
@@ -221,12 +233,31 @@ img {
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 404px) {
+  header {
+    height: 100% !important;
+  }
+  .container-fluid {
+  }
+  .welcome__single {
+    height: 250px;
+  }
+  .welcome__single--1 {
+    margin-top: 40% !important;
+  }
+}
+
+@media (max-width: 767px) {
   header {
     background: rgb(243,243,243);
+    height: 80%;
   }
   .card__container--size {
     height: 50%;
+  }
+  .icon__container {
+    width: 100px;
   }
 
   h1, h2 {
@@ -238,14 +269,22 @@ img {
   }
   
   .welcome__single {
+    text-align: left;
     margin: 0;
   }
   .welcome__single--1 {
-    margin-top: 50px;
+    margin-top: 33%;
+    padding: 0 10% 0 10% !important;
   }
   .welcome__single--2 {
+
   }
   .welcome__single__img {
+    display: flex !important;
+    align-self: auto !important;
+    justify-content: center !important;
+    width: 30%;
+
   }
   span {
     display: none;
@@ -255,19 +294,55 @@ img {
     color: #f3f3f3;
     background-color: #26343c;
   }
-
-}
-
-@media (max-width: 768px) {
+  
+  .scroll__container {
+    display: none;
+  }
 
 }
 
 @media (max-width: 992px) {
 
+
 }
 
 @media (max-width: 1200px) {
-  .LOGO {
+
+
+
+}
+
+@media (max-height: 890px) {
+  header {
+    height: 100% !important;
+  }
+
+  .scroll__container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+  }
+  .scroll {
+    display: inline-block;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #f3f3f3;
+    border-radius: 50%;
+    transition: .5s;
+    background-color: #26343c;
+    border: 2px solid #edd5ab;
+  }
+  
+  .scroll:hover {
+    color: #edd5ab !important;
+  }
+
+}
+
+@media (min-height: 891px) {
+  .scroll__container {
     display: none;
   }
 }
+
