@@ -185,10 +185,17 @@ img {
   overflow: hidden;
 }
 
-.card:hover {  
-  background-size: 140% !important;
-  transition-duration: .4s, .4s;
-  transition-timing-function: ease, ease-out;
+
+
+.card__container--size {
+  overflow:hidden
+}
+.card {
+  transition: transform 0.5s; 
+  -webkit-transition: -webkit-transform 0.5s
+}
+.card__container--size:hover .card{
+  transform: scale(1.5); -webkit-transform: scale(1.5);
 }
 
 .card-title {
@@ -294,7 +301,7 @@ img {
     color: #f3f3f3;
     background-color: #26343c;
   }
-  
+
   .scroll__container {
     display: none;
   }
