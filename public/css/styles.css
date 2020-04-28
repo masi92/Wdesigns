@@ -270,7 +270,7 @@ img {
   .welcome__single {
   }
   .welcome__single--1 {
-    margin-top: 60% !important;
+    margin-top: 250px !important;
     padding: 0 10% 0 10% !important;
   }
   .welcome__single--2 {
@@ -307,7 +307,7 @@ img {
     margin: 0;
   }
   .welcome__single--1 {
-    margin-top: 33%;
+    margin-top: 250px;
   }
   .welcome__single--2 {
 
@@ -317,6 +317,7 @@ img {
     align-self: auto !important;
     justify-content: center !important;
     width: 30%;
+    margin-top: 50px;
   }
   .img__logo {
     width: 130% !important;
