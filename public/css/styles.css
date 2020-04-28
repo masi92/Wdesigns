@@ -270,7 +270,7 @@ img {
   .welcome__single {
   }
   .welcome__single--1 {
-    margin-top: 40% !important;
+    margin-top: 60% !important;
     padding: 0 10% 0 10% !important;
   }
   .welcome__single--2 {
@@ -317,8 +317,12 @@ img {
     align-self: auto !important;
     justify-content: center !important;
     width: 30%;
+  }
+  .img__logo {
+    width: 130% !important;
 
   }
+
   span {
     display: none;
   }
@@ -331,17 +335,6 @@ img {
   .scroll__container {
     display: none;
   }
-
-}
-
-@media (max-width: 992px) {
-
-
-}
-
-@media (max-width: 1200px) {
-
-
 
 }
 
