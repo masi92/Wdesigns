@@ -96,11 +96,11 @@ p {
 }
 
 .welcome__single--1 {
-  padding: 0 8% 0 3%;
+  padding: 0 7% 0 7%;
 }
 
 .welcome__single--2{
-  padding: 0 3% 0 8%;
+  padding: 0 7% 0 7%;
 }
 
 .welcome__single__img {
@@ -162,8 +162,7 @@ p {
  */
 
 img {
-  max-width: 100%;
-  min-height: 140px;
+
   vertical-align: middle;
 }
 
@@ -265,21 +264,28 @@ img {
 @media (max-width: 404px) {
   header {
     height: 100% !important;
+    min-height: 900px !important;
   }
-  .container-fluid {
-  }
+
   .welcome__single {
-    height: 250px;
   }
   .welcome__single--1 {
     margin-top: 40% !important;
+    padding: 0 10% 0 10% !important;
   }
+  .welcome__single--2 {
+    padding: 0 10% 0 10% !important;
+  }
+  .welcome__single__img {
+    width: 50% !important;
+}
 }
 
 @media (max-width: 767px) {
   header {
     background: rgb(243,243,243);
     height: 80%;
+    min-height: 900px !important;
   }
   .card__container--size {
     height: 50%;
@@ -302,7 +308,6 @@ img {
   }
   .welcome__single--1 {
     margin-top: 33%;
-    padding: 0 10% 0 10% !important;
   }
   .welcome__single--2 {
 
