@@ -34,18 +34,20 @@ h1 {
   text-align: center;
   color: #f3f3f3;
   font-size: 30px !important;
-  margin: 25px 25px 25px 25px;
+  padding-bottom: 20px;
 }
 
 h2 {
+  text-align: left;
   font-size: 20px !important;
   /** text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); **/
-  margin: 20px 20px 20px 20px;
+  padding-bottom: 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 h4 {
   font-size: 20px !important;
-  margin: 10px 0 10px 0;
+  margin: 10px 10px 10px 10px;
 }
 
 h5 {
@@ -95,11 +97,7 @@ p {
   align-self: center;
 }
 
-.welcome__single--1 {
-  padding: 0 7% 0 7%;
-}
-
-.welcome__single--2{
+.welcome__single--1, .welcome__single--2 {
   padding: 0 7% 0 7%;
 }
 
@@ -112,50 +110,37 @@ p {
 
 .socials, .services {
   display: flex;
-  justify-content: center;
-  margin: 40px;
+  justify-content: space-evenly;
+  padding-top: 20px;
 }
 
-.social {
+.social, .service {
   display: inline-block;
+  background: #f3f3f3;
+  color: #26343c;
+  width: 50px;
   height: 50px;
-  font-size: 20px;
-  padding: 10px 20px;
-  color: #303841;
   border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  padding-top: 5px;
   transition: .5s;
-  background-color: #f3f3f3;
-  margin-left: 0.5em !important;
 }
-
 
 .service {
-  display: inline-block;
-  height: 50px;
-  font-size: 20px;
-  padding: 10px 20px;
-  color: #f3f3f3;
-  border-radius: 50%;
-  transition: .5s;
-  background-color: #26343c;
-  margin-left: 0.5em !important;
+  background: #26343c !important;
+  color: #f3f3f3 !important;
 }
 
 .icon__container {
-  display: block;
-  width: 200px;
+  display: inline-block;
   text-align: center;
 }
 
-.service:hover {
+.service:hover, .social:hover {
   color: #edd5ab !important;
 }
-
-.social:hover {
-  color: #edd5ab !important;
-}
-
-
 
 /*
  * cards
@@ -259,7 +244,11 @@ img {
   color: #edd5ab;
 }
 
-
+@media (max-width: 320px) {
+  span {
+    display: none;
+  }
+}
 
 @media (max-width: 404px) {
   header {
@@ -270,14 +259,13 @@ img {
   .welcome__single {
   }
   .welcome__single--1 {
-    margin-top: 250px !important;
     padding: 0 10% 0 10% !important;
   }
   .welcome__single--2 {
     padding: 0 10% 0 10% !important;
   }
   .welcome__single__img {
-    width: 50% !important;
+    min-width: 50% !important;
 }
 }
 
@@ -291,23 +279,22 @@ img {
     height: 50%;
   }
   .icon__container {
-    width: 100px;
+    width: 50px;
   }
 
   h1, h2 {
-    margin: 0;
     color: #26343c !important;
   }
-  h2 {
-    margin-top: 15px;
+
+  span {
+    display: none;
   }
   
   .welcome__single {
-    text-align: left;
     margin: 0;
   }
   .welcome__single--1 {
-    margin-top: 250px;
+    margin-top: 200px;
   }
   .welcome__single--2 {
 
@@ -318,14 +305,10 @@ img {
     justify-content: center !important;
     width: 30%;
     margin-top: 50px;
+    height: 160px;
   }
   .img__logo {
     width: 130% !important;
-
-  }
-
-  span {
-    display: none;
   }
   
   .social {
