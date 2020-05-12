@@ -56,6 +56,11 @@ h5 {
   color: #f3f3f3;
 }
 
+h6 {
+  margin: 0 17%;
+  padding: 7px 0 10px 0;
+}
+
 p {
   font-size: 15px !important;
 }
@@ -64,10 +69,10 @@ p {
   height: 100% !important;
 }
 
-.vh-30 {
+.vh-40 {
   height: 40%;
 }
-.vh-70 {
+.vh-60 {
   height: 60%;
 }
 
@@ -111,6 +116,7 @@ p {
   display: flex;
   align-self: center;
   width: 15%;
+  max-width: 300px;
   position: absolute;
 }
 
@@ -153,7 +159,6 @@ p {
  */
 
 img {
-
   vertical-align: middle;
 }
 
@@ -225,14 +230,19 @@ img {
 }
 
 .info-card {
-  text-align: center;
+  padding: 3% 3% 0 3%;
 }
 
 
 /* buttons */
 .btn-1 {
-  background-color: #f3f3f3; 
+  display: inline-block;
+  background: #f3f3f3;
   color: #26343c;
+  width: 120px;
+  text-align: center;
+  padding-top: 5px;
+  transition: .5s;
 }
 
 .btn-1:hover {
@@ -241,8 +251,13 @@ img {
 }
 
 .btn-2 {
+  display: inline-block;
   background-color: #26343c; 
   color: #f3f3f3;
+  width: 120px;
+  text-align: center;
+  padding-top: 5px;
+  transition: .5s;
 }
 
 .btn-2:hover {
@@ -264,16 +279,26 @@ img {
 
   .welcome__single {
   }
-  .welcome__single--1 {
-    padding: 0 3% 0 3% !important;
-  }
-  .welcome__single--2 {
-    padding: 0 3% 0 3% !important;
-  }
+ 
   .welcome__single__img {
     min-width: 50% !important;
 }
 }
+
+@media (max-width: 495px) {
+  .welcome__single--1 {
+    padding: 30% 3% 0 3% !important;
+  }
+  
+  h6 {
+    text-align: center;
+  }
+
+  .btn-1, .btn-2 {
+    display: block;
+    width: auto;
+  }
+} 
 
 @media (max-width: 767px) {
   header {
@@ -291,6 +316,9 @@ img {
   h1, h2 {
     color: #26343c !important;
   }
+  h6 {
+    margin: 0 5% !important;
+  }
 
   span {
     display: none;
@@ -300,7 +328,8 @@ img {
   }
 
   .welcome__single {
-    margin-top: 135px;
+    padding-top: 20px;
+
     }
   .welcome__single--1 {
   }
