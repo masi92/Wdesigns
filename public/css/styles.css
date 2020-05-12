@@ -64,6 +64,12 @@ p {
   height: 100% !important;
 }
 
+.vh-30 {
+  height: 40%;
+}
+.vh-70 {
+  height: 60%;
+}
 
 /*
  * Header
@@ -259,10 +265,10 @@ img {
   .welcome__single {
   }
   .welcome__single--1 {
-    padding: 0 10% 0 10% !important;
+    padding: 0 3% 0 3% !important;
   }
   .welcome__single--2 {
-    padding: 0 10% 0 10% !important;
+    padding: 0 3% 0 3% !important;
   }
   .welcome__single__img {
     min-width: 50% !important;
@@ -273,7 +279,7 @@ img {
   header {
     background: rgb(243,243,243);
     height: 80%;
-    min-height: 900px !important;
+    min-height: 700px !important;
   }
   .card__container--size {
     height: 50%;
@@ -290,14 +296,16 @@ img {
     display: none;
   }
   
-  .welcome__single {
-    margin: 0;
+  .container-fluid {
   }
+
+  .welcome__single {
+    margin-top: 135px;
+    }
   .welcome__single--1 {
-    margin-top: 200px;
   }
   .welcome__single--2 {
-
+    display: none;
   }
   .welcome__single__img {
     display: flex !important;
@@ -305,6 +313,7 @@ img {
     justify-content: center !important;
     width: 30%;
     margin-top: 50px;
+    padding-bottom: 20px;
     height: 160px;
   }
   .img__logo {
@@ -330,19 +339,19 @@ img {
   .scroll__container {
     position: absolute;
     bottom: 20px;
+    left: 24%;
     text-align: center;
   }
   .scroll {
     display: inline-block;
-    height: 50px;
     font-size: 20px;
     padding: 10px 20px;
     color: #f3f3f3;
     border-radius: 50%;
     transition: .5s;
-    background-color: #26343c;
-    border: 2px solid #edd5ab;
-  }
+    background: rgba(38, 52, 60);
+    border: 1px solid #26343c;
+    }
   
   .scroll:hover {
     color: #edd5ab !important;
