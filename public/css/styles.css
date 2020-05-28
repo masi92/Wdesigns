@@ -70,8 +70,8 @@ p {
   height: 100% !important;
 }
 
-.vh-40 {
-  height: 40%;
+.vh-30 {
+  height: 30%;
 }
 .vh-60 {
   height: 60%;
@@ -89,8 +89,8 @@ p {
   background-size: 50% auto;
   */
   background: rgb(243,243,243);
-  background: linear-gradient(90deg, rgba(243,243,243,1) 50%, rgb(38, 52, 60) 50%);
-  height: 60%;
+  background: linear-gradient(90deg, rgba(243,243,243,1) 50%, rgb(36, 39, 44) 50%);
+  height: 100%;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -101,6 +101,7 @@ p {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+  
 
 /* navigation */
 .navbar {
@@ -168,7 +169,7 @@ p {
 }
 
 .service {
-  background: #26343c !important;
+  background: #0f1217 !important;
   color: #f3f3f3 !important;
 }
 
@@ -190,7 +191,7 @@ img {
 }
 
 .container-fluid {
-   height: 40%;
+   height: 70%;
 }
 
 .bg-custom {
@@ -303,20 +304,17 @@ img {
     height: 100% !important;
     min-height: 900px !important;
   }
-
-  .welcome__single {
-  }
  
   .welcome__single__img {
     min-width: 50% !important;
-}
+  }
+
 }
 
 @media (max-width: 495px) {
-  .welcome__single--1 {
-    padding: 30% 3% 0 3% !important;
+  h2 {
+    margin: 5% !important;
   }
-  
   .info, .contact {
     text-align: center;
   }
@@ -344,6 +342,15 @@ img {
   h1, h2 {
     color: #26343c !important;
   }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0 15% 0 15%;
+  }
+
   h6 {
     margin: 0 5% !important;
   }
@@ -351,15 +358,11 @@ img {
   span {
     display: none;
   }
-  
-  .container-fluid {
-  }
 
-  .welcome__single {
-    padding-top: 20px;
-
-    }
   .welcome__single--1 {
+    padding: 125px 0px 0px 0px !important;
+    height: 70%;
+    margin: 0;
   }
   .welcome__single--2 {
     display: none;
@@ -382,13 +385,8 @@ img {
     background-color: #26343c;
   }
 
-  .scroll__container {
-    display: none;
-  }
-
   .services {
     justify-content: space-evenly;
-
   }
 
 }
@@ -402,28 +400,6 @@ img {
 @media (max-height: 890px) {
   header {
     height: 100% !important;
-  }
-
-
-  .scroll__container {
-    position: absolute;
-    bottom: 20px;
-    left: 24%;
-    text-align: center;
-  }
-  .scroll {
-    display: inline-block;
-    font-size: 20px;
-    padding: 10px 20px;
-    color: #f3f3f3;
-    border-radius: 50%;
-    transition: .5s;
-    background: rgba(38, 52, 60);
-    border: 1px solid #26343c;
-    }
-  
-  .scroll:hover {
-    color: #edd5ab !important;
   }
 
 }
