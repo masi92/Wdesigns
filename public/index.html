@@ -19,39 +19,40 @@
   
   <body>
     <header>
-      <div class="navbar">
-        <ul class="nav_links">
-            <li><a href="#">Etusivu</a></li>
-            <li><a href="#">Palvelut</a></li>
-            <li><a href="#">Tutustu</a></li>
-            <li><a href="#">Yhteystiedot</a></li>
-        </ul>
-    </div>
 
-      <div class="welcome__single__img vh-30">
-        <img src="img/WDesign_KhakiGreen.svg" class="img__logo" style="width: 100%;">
-      </div> 
+
+
 
       <div class="container-fluid row">
+        <div class="welcome__single__img">
+          <img src="img/WDesign_KhakiGreen.svg" class="img__logo" style="width: 100%;">
+          <div class="navbar">
+            <ul class="nav_links">
+              <li><a href="#">Etusivu</a></li>
+              <div class="dropdown">
+                <li><button class="dropbtn">Palvelut</button></li>
+                <div class="dropdown-content">
+                  <a href="#">Suunnittelu</a>
+                  <a href="#">Kehitys</a>
+                  <a href="#">Grafiikka</a>
+                </div>
+              </div>
+              <li><a href="#">Tutustu</a></li>
+              <li><a href="#">Yhteystiedot</a></li>
+            </ul>
+          </div>
+        </div> 
 
         <div class="col-md-6 welcome__single welcome__single--1">
-          <h1 style="color:#26343c;">Web-kehityksen palveluita</h1>
-          <h2 style="color: #26343ccf;" >Suunnittelemme ja toteutamme palveluita web-sivuille ja sovelluksille. <br><br> Älä tyydy vähään vaan anna sivujesi erottua!</h1>
-            <div class="services">
-              <div class="icon__container">
-                <a href="#" class="service"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                <h4 class="service__title" style="color:#26343c"><span>Facebook</span>
-              </div>
-              <div class="icon__container">
-                <a href="https://www.instagram.com/wdesigns.fi/" class="service"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <h4 class="service__title" style="color: #26343c"><span>Instagram</span>
-              </div>
-              <div class="icon__container">
-                <a href="#" class="service"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <h4 class="service__title" style="color: #26343c"><span>Linkedin</span>
-              </div>
-            </div>
+          <h1 style="color:#26343c;">Web palveluiden suunnittelua sekä kehitystä tyylillä</h1>
+          <h2 style="color: #26343ccf;" >Tarjoamme monipuolisia palveluita web-sivujen sekä sovellusten suunnitteluun ja kehitykseen.
+          <br><br> Älä tyydy vähään, anna sivujesi erottua!</h1>
+          <div class="header__btns">
+            <button class="h1btn">Palvelumme</button>
+            <button class="h2btn">Ota yhteyttä</button>
           </div>
+        </div>
+
 
         <div class="col-md-6 welcome__single welcome__single--2">
           <div class="">
@@ -59,8 +60,6 @@
           </div>
         </div>
       </div>
-
-
 
     </header>
 

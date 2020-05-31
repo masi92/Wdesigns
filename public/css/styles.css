@@ -35,7 +35,6 @@ h1 {
   color: #f3f3f3;
   font-size: 30px !important;
   padding-bottom: 20px;
-  margin: 0 0 0 20px;
 }
 
 h2 {
@@ -43,7 +42,6 @@ h2 {
   font-size: 20px !important;
   /** text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); **/
   padding-bottom: 20px;
-  margin: 0px 20px 0px 20px;
 }
 
 h4 {
@@ -66,13 +64,18 @@ p {
   font-size: 15px !important;
 }
 
+.btn {
+  width: 150px;
+  border-radius: 4%;
+  float: left;
+  margin-left: 3%;
+}
+
 .row {
   height: 100% !important;
 }
 
-.vh-30 {
-  height: 30%;
-}
+
 .vh-60 {
   height: 60%;
 }
@@ -89,7 +92,7 @@ p {
   background-size: 50% auto;
   */
   background: rgb(243,243,243);
-  background: linear-gradient(90deg, rgba(243,243,243,1) 50%, rgb(36, 39, 44) 50%);
+  background: linear-gradient(90deg, rgba(243,243,243,1) 50%, rgb(36, 39, 44)50%);
   height: 100%;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -105,19 +108,17 @@ p {
 
 /* navigation */
 .navbar {
-  display: block;
-  justify-content: flex-start;
-  padding: 30px;
+  display: inline;
   position: absolute;
-  right: 0;
+  margin: 56px 0px 0px 100px;
 }
 
 .nav_links {
+  display: inline-flex;
   list-style: none;
 }
 
 .nav_links li {
-  display: inline-block;
   padding: 0px 20px;
 }
 
@@ -130,31 +131,84 @@ p {
   transition: 0.5s;
 }
 
+.dropbtn {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(36, 39, 44);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  margin-left: 12px;
+  color: #f3f3f3;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header__btns {
+  float: left;
+}
+
+.h1btn {
+  background: rgb(36, 39, 44);
+  color: #f3f3f3;
+  border-radius: 0%;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.h2btn {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(36, 39, 44);
+  border-radius: 0%;
+  min-width: 150px;
+  min-height: 40px;
+}
+.container-fluid {
+
+}
 .welcome__single {
-  margin: 50px 0px 50px 0px;
+  padding: 0 7% 0 7%;
   text-align: center;
   align-self: center;
 }
+.welcome__single--1 {
 
-.welcome__single--1, .welcome__single--2 {
+}
+.welcome__single--2 {
   padding: 0 7% 0 7%;
 }
 
 .welcome__single__img {
   display: flex;
-  align-self: center;
-  width: 15%;
-  max-width: 300px;
   position: absolute;
+  left: 50%;
+  margin-left: -75px;
 }
 
-.socials, .services {
-  display: flex;
-  justify-content: start;
-  padding-top: 20px;
+.socials {
+
 }
 
-.social, .service {
+.social {
   display: inline-block;
   background: #f3f3f3;
   color: #26343c;
@@ -168,7 +222,7 @@ p {
   transition: .5s;
 }
 
-.service {
+.social {
   background: #0f1217 !important;
   color: #f3f3f3 !important;
 }
@@ -178,7 +232,7 @@ p {
   text-align: center;
 }
 
-.service:hover, .social:hover {
+.social:hover, .social:hover {
   color: #edd5ab !important;
 }
 
@@ -304,16 +358,18 @@ img {
     height: 100% !important;
     min-height: 900px !important;
   }
- 
   .welcome__single__img {
-    min-width: 50% !important;
   }
-
+  .welcome__single {
+  }
+  h1 {
+    padding-top: 25px;
+  }
 }
 
 @media (max-width: 495px) {
-  h2 {
-    margin: 5% !important;
+  h1, h2 {
+    margin: 0 0% 0 5% !important;
   }
   .info, .contact {
     text-align: center;
@@ -344,11 +400,12 @@ img {
   }
 
   h1 {
-    text-align: center;
+    text-align: left;
+    font-size: 27px !important;
   }
 
-  h2 {
-    margin: 0 15% 0 15%;
+  h1, h2 {
+    margin: 0 0% 0 10%;
   }
 
   h6 {
@@ -359,25 +416,18 @@ img {
     display: none;
   }
 
-  .welcome__single--1 {
-    padding: 125px 0px 0px 0px !important;
-    height: 70%;
-    margin: 0;
-  }
-  .welcome__single--2 {
+  .welcome__single--2, .welcome__single--3 {
     display: none;
+  }
+
+  .welcome__single {
+    padding: 0 !important;
   }
   .welcome__single__img {
     display: flex !important;
     align-self: auto !important;
     justify-content: center !important;
-    width: 30%;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    height: 160px;
-  }
-  .img__logo {
-    width: 130% !important;
+    padding-top: 50px;
   }
   
   .social {
@@ -389,11 +439,22 @@ img {
     justify-content: space-evenly;
   }
 
+  .header__btns {
+    display: inline;
+    float: none;
+  }
+
 }
 
 @media (max-width: 1000px) {
   .navbar {
     display: none;
+  }
+}
+
+@media (max-height: 770px) {
+  .welcome__single--1 {
+    padding-top: 100px;
   }
 }
 
