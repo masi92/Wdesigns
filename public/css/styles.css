@@ -170,17 +170,19 @@ p {
 .h1btn {
   background: rgb(36, 39, 44);
   color: #f3f3f3;
-  border-radius: 0%;
   min-width: 150px;
   min-height: 40px;
+  border-radius: 12px;
+  margin: 20px 0 0 0;
 }
 
 .h2btn {
   background: rgba(255, 255, 255, 0);
   color: rgb(36, 39, 44);
-  border-radius: 0%;
   min-width: 150px;
   min-height: 40px;
+  border-radius: 12px;
+
 }
 .container-fluid {
 
@@ -388,6 +390,11 @@ img {
     min-height: 700px !important;
   }
 
+  .container-fluid {
+    background-image: url(../img/bg-white.png);
+    background-position-y: bottom;
+  }
+
   .card__container--size {
     height: 50%;
   }
@@ -421,7 +428,8 @@ img {
   }
 
   .welcome__single {
-    padding: 0 !important;
+    padding: 220px 0 0 0 !important;
+    align-self: auto !important;
   }
   .welcome__single__img {
     display: flex !important;
